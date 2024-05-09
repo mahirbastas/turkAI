@@ -7,7 +7,7 @@ import os
 
 load_dotenv()
 
-INTERPOL_API_URL = "https://api.interpol.int/public/Data/WANTED"
+INTERPOL_API_URL = "https://ws-public.interpol.int/notices/v1/red"
 RABBITMQ_HOST = os.getenv("RABBITMQ_HOST")
 RABBITMQ_PORT = int(os.getenv("RABBITMQ_PORT"))
 QUEUE_NAME = os.getenv("QUEUE_NAME")
